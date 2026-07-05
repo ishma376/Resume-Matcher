@@ -4,7 +4,7 @@ import re
 import httpx
 import json
 import pydantic
-import PyPDF2
+import pypdf
 import bcrypt
 import jwt
 import time
@@ -184,7 +184,7 @@ def stream_ats_analysis(client, prompt, job_description, resume_text):
 def extract_text_from_pdf(file_bytes: bytes) -> str:
     try:
         pdf_file = io.BytesIO(file_bytes)
-        reader = PyPDF2.PdfReader(pdf_file)
+        reader = pypdf.PdfReader(pdf_file)
 
         print("Pages:", len(reader.pages))
 
