@@ -445,7 +445,7 @@ setStreamLogs([]);
               {loading && (
                 <div className="m-auto text-center space-y-3">
                   <Loader2 className="animate-spin h-8 w-8 mx-auto text-[#D96B27]" />
-                  <p className="text-xs font-bold uppercase tracking-widest text-stone-400">Requesting OpenAI Output Tokens...</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-stone-400">wait a moment, analyzing...</p>
                 </div>
               )}
 
@@ -456,7 +456,7 @@ setStreamLogs([]);
                   <div className="bg-white p-6 rounded-2xl border border-stone-200 flex items-center justify-between shadow-sm">
                     <div>
                       <h3 className="text-lg font-bold text-slate-900">Overall Match Score</h3>
-                      <p className="text-xs text-stone-500">ATS optimization threshold configuration matrix matching status.</p>
+                      <p className="text-xs text-stone-500"> matching status.</p>
                     </div>
                     <div className="text-4xl font-black text-[#D96B27] bg-orange-50/30 border border-orange-100/60 px-5 py-3 rounded-xl shadow-inner">
                       {result.match_score}%
